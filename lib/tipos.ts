@@ -8,3 +8,16 @@ export type RespuestasFormulario = {
   vivienda: string;
   experiencia: string;
 };
+
+export type InteresadoInsert = {
+  nombre: string;
+  whatsapp: string;
+  email: string | null;
+  respuestas: {
+    motivo: string;
+    otrosAnimales: string;
+    ninosEdades: string;
+    vivienda: string;
+    experiencia: string;
+  };
+};
